@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>portfolio website</title>
+</head>
+<style>
+	*{
+		 padding:0;
+		 margin:0;
+		 font-family:'Arial';
+		 box-sizing:border-box;
+
+	}
+
+.body {
+	height:100vh;
+	width:100%;
+	background-color:#A9A9A9;
+	background-size:cover;
+	background-position:center;
+}
+nav{
+	 display:flex;
+	 align-items:center;
+	 justify-content:space-between;
+	 padding-top:45px;
+	 padding-left:8%;
+	 padding-right:8%;
+}
+.logo {
+	color:white;
+	font-size:35px;
+	letter-spacing:1px;
+	cursor:pointer;
+
+}
+ul li {
+	  list-style-type:none;
+	  display:inline-block;
+	  padding:10px 25px;
+
+}
+ ul li  a{
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+
+} 
+nav ul li a:hover {
+	color:#87CEEB;
+	transition:2s;
+
+}
+.slider{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.image{
+	display: flex;
+	
+	
+}
+.image img{
+	align-items: center;
+	margin-left: 12PX;
+	height:450px;
+	width:100%;
+	transition: all 0.15s ease;
+}
+.image input{
+	display: none;
+}
+.dots{
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+.dots label{
+	height: 17px;
+	width: 17px;
+	border-radius: 50%;
+	border: solid #fff 3px;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	margin: 5px;
+}
+.dots label:hover{
+	background-color: #fff;
+
+}
+#a:checked ~ .a{
+	margin-left: 0;
+}
+#b:checked ~ .b{
+	margin-left: -100%;
+}
+#c:checked ~ .c{
+	margin-left: -200%;
+}
+#d:checked ~ .d{
+	margin-left: -300%;
+}
+.photo1{
+	width:7000px;
+}
+		   
+ img{
+	 float:left;
+	 margin:10px;
+	 
+	 }
+.menu{
+	width:100%;
+	height:290px;
+	background-color:#191919;
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+
+} 
+.menu p{
+	color:white;
+	font-size:30px;
+	font-weight:bold;
+	margin-bottom:25px;
+}
+
+								
+
+</style>
+<body>
+ <div class="body">
+ <nav>
+     <h2 class="logo">PORTFOLIO</h2>
+     <ul>
+     <li><a href="index.html">index</a></li>
+     <li><a href="index.html">SERVICES</a></li>
+     <li><a href="about me.html">ABOUT ME</a></li>
+     <li><a href="contact.html">CONTACT</a></li>
+     </ul>
+     </nav>
+     <br></br>
+     <body>
+	 <div class="slider">
+		<div class="image">
+			<input type="radio" name="slide" id="a" checked>
+			<input type="radio" name="slide" id="b">
+			<input type="radio" name="slide" id="c">
+			<input type="radio" name="slide" id="d">
+
+			<img src="a.png" class="photo1" alt="a">
+			<img src="b.jpg" class="b" alt="b">
+			<img src="c.jpg" class="c" alt="c">
+			<img src="d.png" class="d" alt="d">
+		</div>
+		<div class="dots">
+			<label for="a"></label>
+			<label for="b"></label>
+			<label for="c"></label>
+			<label for="d"></label>
+		</div>
+</div>
+<div class="menu">
+	<p>LET ME SERENATE YOUR DAY WITH AN OUTRAGEOUS WEBSITE</p>
+</div>
+</body>
+</html>
